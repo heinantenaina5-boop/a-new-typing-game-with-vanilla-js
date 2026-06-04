@@ -369,3 +369,127 @@ canvas {
   width: 100%;
   height: 420px;
 }
+
+html[data-theme="light"] .topbar h1 {
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 8px rgba(162, 28, 175, 0.3));
+}
+
+html[data-theme="light"] .btn-action,
+html[data-theme="light"] .btn-link,
+html[data-theme="light"] button:not(:disabled) {
+  background: var(--gradient-main);
+}
+
+html[data-theme="light"] .btnn {
+  background: var(--gradient-main);
+}
+
+html[data-theme="light"] .stat strong,
+html[data-theme="light"] .stat p {
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+html[data-theme="light"] .timer {
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 6px rgba(162, 28, 175, 0.35));
+}
+
+html[data-theme="light"] .token.cur {
+  background: var(--gradient-radial);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+}
+
+html[data-theme="light"] .token.ok {
+  background: var(--gradient-good);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+html[data-theme="light"] .word-line-wrapper {
+  border-color: rgba(162, 28, 175, 0.2);
+}
+
+html[data-theme="light"] .word-line-wrapper::-webkit-scrollbar-thumb {
+  background: var(--gradient-main);
+}
+
+html[data-theme="light"] .stat:hover {
+  border-color: rgba(162, 28, 175, 0.35);
+  box-shadow: 0 4px 20px rgba(162, 28, 175, 0.15);
+}
+
+html[data-theme="light"] select:focus,
+html[data-theme="light"] input:focus {
+  border-color: #a21caf;
+  box-shadow: 0 0 0 3px rgba(162, 28, 175, 0.15);
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 94%;
+    max-width: none;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .topbar {
+    padding: 4vw;
+  }
+
+  .top-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .topbar h1 {
+    font-size: 4vw;
+  }
+
+  .btn-action,
+  .btn-link,
+  button,
+  select,
+  input,
+  .controls label,
+  .timer {
+    font-size: 3vw;
+  }
+
+  .word-line {
+    font-size: 3.5vw;
+  }
+
+  .word-line-wrapper {
+    height: 110px;
+  }
+
+  .stat span {
+    font-size: 2vw;
+  }
+
+  .stat p,
+  .stat strong {
+    font-size: 3.5vw;
+  }
+
+  .btnn {
+    font-size: 3vw;
+    padding: 4vw 7vw;
+  }
+}
